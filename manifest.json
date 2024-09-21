@@ -1,26 +1,20 @@
 {
   "manifest_version": 2,
-  "name": "Beastify",
+  "name": "Keylchemy",
   "version": "1.0",
 
-  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/main/beastify",
+  "description": "Adds a browser action icon to the toolbar. Click the button to generate a random password of your desired length and copy it into your clipboard.",
+  "homepage_url": "https://github.com/Bickor/keylchemy",
   "icons": {
-    "48": "icons/beasts-48.png"
+    "48": "icons/48x48.png"
   },
 
   "permissions": ["activeTab", "clipboardWrite"],
 
   "browser_action": {
-    "default_icon": "icons/beasts-32.png",
-    "default_title": "Beastify",
+    "default_icon": "icons/32x32.png",
+    "default_title": "Keylchemy",
     "default_popup": "popup/popup.html"
-  },
-
-  "web_accessible_resources": [
-    "beasts/frog.jpg",
-    "beasts/turtle.jpg",
-    "beasts/snake.jpg"
-  ]
+  }
 }
 
