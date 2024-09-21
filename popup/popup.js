@@ -16,7 +16,8 @@ function generatePassword(length = 12) {
  */
 function updatePassword() {
   const passwordField = document.getElementById("password");
-  passwordField.textContent = generatePassword();
+  const length = document.getElementById("password-length-slider").value;
+  passwordField.textContent = generatePassword(length);
 }
 
 /**
@@ -44,11 +45,22 @@ function showCopyMessage() {
 }
 
 /**
+ * Update the displayed password length when the slider is moved.
+ */
+function updatePasswordLengthDisplay() {
+  const lengthDisplay = document.getElementById("password-length-display");
+  const length = document.getElementById("password-length-slider").value;
+  lengthDisplay.textContent = length;
+  updatePassword(); // Regenerate the password when the length changes
+}
+
+/**
  * Listen for clicks on the regenerate and copy buttons.
  */
 function listenForClicks() {
   document.getElementById("regenerate").addEventListener("click", updatePassword);
   document.getElementById("copy").addEventListener("click", copyToClipboard);
+  document.getElementById("password-length-slider").addEventListener("input", updatePasswordLengthDisplay);
 }
 
 /**

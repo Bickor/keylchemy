@@ -36,6 +36,35 @@ button:hover {
   background-color: #45a049;
 }
 
+/* Slider styling */
+#password-length-slider {
+  -webkit-appearance: none; /* Override default styling */
+  width: 100%;
+  height: 8px; /* Slider height */
+  border-radius: 4px; /* Rounded corners */
+  background: #ddd; /* Background color */
+  outline: none; /* Remove outline */
+  margin-top: 5px; /* Spacing from other elements */
+}
+
+#password-length-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default styling */
+  appearance: none; /* Override default styling */
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  border-radius: 50%; /* Circular thumb */
+  background: #4CAF50; /* Thumb color */
+  cursor: pointer; /* Pointer cursor */
+}
+
+#password-length-slider::-moz-range-thumb {
+  width: 20px; /* Thumb width */
+  height: 20px; /* Thumb height */
+  border-radius: 50%; /* Circular thumb */
+  background: #4CAF50; /* Thumb color */
+  cursor: pointer; /* Pointer cursor */
+}
+
 #copy-message {
   color: green;
   font-size: 12px;
