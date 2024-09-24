@@ -74,3 +74,41 @@ button:hover {
   margin-top: 5px;
 }
 
+.option-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.option-button.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#password-length-slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#copy-message {
+  color: green;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s ease-in, opacity 1.5s ease-out;
+  margin-top: 5px;
+}
+
+#no-selection-message {
+  font-size: 12px;
+  margin-top: 10px;
+  color: red;
+  opacity: 0;
+  transition: opacity 0.5s;
+}

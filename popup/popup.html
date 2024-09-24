@@ -15,7 +15,14 @@
       </div>
       <p>Password length: <span id="password-length-display">12</span></p>
       <input type="range" id="password-length-slider" min="6" max="32" value="12">
+      <!-- Add toggle buttons for password generation options -->
+      <button id="uppercase" class="option-button active">Uppercase</button>
+      <button id="lowercase" class="option-button active">Lowercase</button>
+      <button id="numbers" class="option-button active">Numbers</button>
+      <button id="symbols" class="option-button active">Symbols</button>
       <p id="copy-message">Password copied to clipboard!</p>
+      <!-- No selection message -->
+      <p id="no-selection-message">At least one option must be selected!</p>
       <button id="regenerate">Regenerate Password</button>
       <button id="copy">Copy to Clipboard</button>
     </div>
